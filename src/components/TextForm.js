@@ -13,6 +13,16 @@ export default function TextForm(props) {
     let newText = "";
     setText(newText);
   }
+  const handlecopy=()=>{
+    var text=document.getElementById("myBox");
+    text.select();
+    navigator.clipboard.writeText(text.value);
+  }
+  const handleExtraSpaces=()=>{
+    let newtext=text.split(/[ ]+/)
+    console.log(newtext)
+    setText(newtext.join(" "))
+  }
   const handleOnchange = (event) => [setText(event.target.value)];
   const [text, setText] = useState("");
   return (
@@ -35,6 +45,12 @@ export default function TextForm(props) {
           Convert To Lowercase</button>
         <button className="btn btn-primary mx-2" onClick={handleclearclick}>
           Clear Text
+        </button>
+        <button className="btn btn-primary mx-2" onClick={handlecopy}>
+          Copy Text
+        </button>
+        <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>
+          Remove Extra Spaces
         </button>
       </div>
       <div className="container my-2">

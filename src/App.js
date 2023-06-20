@@ -1,8 +1,8 @@
 import "./App.css";
-//import Module from "./Module";
+import Module from "./Module";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
-//import TextForm from "./components/TextForm";
+import TextForm from "./components/TextForm";
 function App() {
   return (
     <>
@@ -10,9 +10,9 @@ function App() {
       
       {/* <Navbar></Navbar> */}
       <div className="container my-3">
-      {/* <TextForm heading="Enter The Text To Analyze Below"></TextForm> */}
+      <TextForm heading="Enter The Text To Analyze Below"></TextForm>
       <About></About>
-      {/* <Module></Module> */}
+      <Module></Module>
       </div>
     </>
   );
