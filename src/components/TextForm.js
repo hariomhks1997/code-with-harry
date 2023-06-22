@@ -6,7 +6,7 @@ export default function TextForm(props) {
     setText(newText);
   };
   const handleupclick = () => {
-    let newText = text.toUpperCase();
+    let newText = text.toUpperCase();     
     setText(newText);
   };
   const handleclearclick=()=>{

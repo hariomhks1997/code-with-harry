@@ -7,12 +7,12 @@ import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
 
 function App() {
-  const [mode, setmode]=useState("light")fsdfsd
+  const [mode, setmode]=useState("light")     
   const togglemode=()=>{
     if(mode==="light")
     {
       setmode("dark")
-      document.body.style.backgroundColor="#042743";
+      document.body.style.backgroundColor="#042743";   
       showAlert("Dark Mode has been enabled","Sucess")
     }
     else{
