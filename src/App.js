@@ -7,7 +7,7 @@ import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
 
 function App() {
-  const [mode, setmode]=useState("light")
+  const [mode, setmode]=useState("light")fsdfsd
   const togglemode=()=>{
     if(mode==="light")
     {
